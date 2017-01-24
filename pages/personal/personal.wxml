@@ -1,0 +1,9 @@
+<loading hidden="{{hidden}}">
+  加载中...
+ </loading>
+<view class="shell">
+     <view class="flexx" style="flex-direction:column">
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+        <view>{{'欢迎您=>'+userInfo.nickName}}</view>
+    </view>
+</view>

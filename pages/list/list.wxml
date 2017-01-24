@@ -1,0 +1,17 @@
+<loading hidden="{{hidden}}">
+  加载中...
+ </loading>
+<view >{{title}}
+    <view class="prompt">上面的值变动会改变不同页面，比如传id拼接请求不同页面</view>
+</view>
+<block wx:for="{{news}}" wx:for-item="new">
+<navigator url='../find/find'>
+<view class="news" wx:if="true">
+<view class="tt">
+<text class="top">{{new.news.title}}</text>
+<text class="down">{{}}</text>
+</view>
+ <view class="img"><image mode= 'aspectFill' src="{{new.news.image}}"></image></view>
+ </view>
+ </navigator>
+</block>

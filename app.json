@@ -1,0 +1,55 @@
+{
+    "pages": [
+       "pages/star/star",
+        "pages/index/index",
+        "pages/forum/forum",
+         "pages/find/find",
+        "pages/personal/personal",
+        "pages/list/list"
+
+
+       
+    ],
+    "window": {
+        "navigationBarTitleText": "首页",
+        
+        "navigationBarBackgroundColor":"#000",
+        
+        "navigationBarTextStyle":"#fff"
+    },
+    "tabBar": {
+        "color":"#8a8a8a",
+        "selectedColor":"#1296db",
+        "list": [{
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath":"images/shouye.png",
+                "selectedIconPath":"images/shouye (1).png"
+            }, {
+                "pagePath": "pages/forum/forum",
+                "text": "论坛",
+                "iconPath":"images/luntan.png",
+                "selectedIconPath":"images/luntan (1).png"
+            },
+             
+             {
+                "pagePath": "pages/find/find",
+                "text": "发现",
+                "iconPath":"images/faxian.png",
+                "selectedIconPath":"images/faxian (1).png"
+            },
+             {
+                "pagePath": "pages/personal/personal",
+                "text": "个人",
+                "iconPath":"images/geren.png",
+                "selectedIconPath":"images/geren (1).png"
+            }
+
+        ]
+    },
+    "networkTimeout": {
+        "request": 10000,
+        "downloadFile": 10000
+    },
+    "debug": true
+}

@@ -1,0 +1,58 @@
+<loading hidden="{{hidden}}">
+  加载中...
+ </loading>
+
+<scroll-view scroll-x="1" class="scr">
+<navigator url="url" class="scroll-x">
+<view  >推荐</view>
+</navigator>
+<navigator url="url"  class="scroll-x">
+<view >原创</view>
+</navigator>
+<navigator url="url" class="scroll-x">
+<view  >优创+</view>
+</navigator>
+<navigator url="url" class="scroll-x">
+<view  >视频</view>
+</navigator>
+<navigator url="url" class="scroll-x">
+<view  >快报</view>
+</navigator>
+<navigator url="url" class="scroll-x">
+<view  >游记</view>
+</navigator>
+<navigator url="url" class="scroll-x">
+<view  >图片</view>
+</navigator>
+<navigator url="url" class="scroll-x">
+<view  >行情</view>
+</navigator>
+
+</scroll-view>
+ <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image  mode= 'aspectFill' src="{{item.news.image}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<block wx:for="{{news}}" wx:for-item="new">
+<navigator url="../list/list?id={{new.news.title}}">
+<view class="news" wx:if="true">
+<view class="tt">
+<text class="top">{{new.news.title}}</text>
+ 
+<text class="down">{{}}</text>
+</view>
+ <view class="img"><image mode= 'aspectFill' src="{{new.news.image}}"></image></view>
+ </view>
+ </navigator>
+</block>
+
+
+
+
+
+
